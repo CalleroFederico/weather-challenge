@@ -43,6 +43,7 @@ var isValidLocation = function(res) {
 };
 
 var isValidCurrent = function(res) {
+console.log(res);
   res.body.should.have.property("cod");
   res.body.should.have.property("data");
 };

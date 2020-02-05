@@ -20,8 +20,12 @@ app.use (function (error, req, res, next){
 
 app.use(express.static(__dirname));
 
+app.get('/', function(req, res) {
+  res.redirect('https://github.com/CalleroFederico/weather-challenge');
+});
+
 app.get('/v1/', function(req, res) {
-  res.jsonp({ a: 'a' }).end();
+  res.status(200).end();
 });
 
 app.get('/v1/location', function(req, res) {
@@ -81,7 +85,7 @@ app.get('/v1/forecast/:city', function(req, res) {
 });
 
 var server = http.createServer(app);
-var port = '5051';
+var port = '8080';
 
 server.listen(port, () => {
   console.log("server starting on port : " + port)
