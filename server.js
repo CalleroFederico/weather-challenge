@@ -2,7 +2,9 @@ var fs   = require('fs');
 var path = require('path');
 var http = require('http');
 
+//Referencia al modulo de ip-api
 const ipCall = require('./ipapi');
+//Referencia al modulo de Open Weather
 const w = require ('./openweather');
 
 var bodyParser = require('body-parser');
@@ -10,6 +12,7 @@ const express = require('express');
 
 const app = express();
 
+//Habilitamos el reconocimiento de IP.
 app.set('trust proxy',true);
 
 app.use(bodyParser.json());
@@ -20,10 +23,12 @@ app.use (function (error, req, res, next){
 
 app.use(express.static(__dirname));
 
+//Redirige al repositorio.
 app.get('/', function(req, res) {
   res.redirect('https://github.com/CalleroFederico/weather-challenge');
 });
 
+//Base URL
 app.get('/v1/', function(req, res) {
   res.status(200).end();
 });
