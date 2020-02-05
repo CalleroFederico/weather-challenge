@@ -1,9 +1,12 @@
 const http = require('http');
 var promise = require('bluebird');
+//API Key
 const access_key = '3bda6631c756fa0d546ede5e5cfdad5c';
 
+//HTTP Basico Request Handler.
 var getIpApi = function (ip) {
   return new promise (function (res, rej) {
+    //Formacion de Querystring.
     var queryString = 'http://api.ipapi.com/api/'+ ip +'?access_key='+ access_key;
     http.get(queryString, (resp) => {
       let data = '';
