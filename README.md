@@ -18,7 +18,7 @@ NodeJS
 |bluebird|https://www.npmjs.com/package/bluebird|
 | GitHub | https://github.com/ |
 
-#### API Desctripcion
+#### API Descripcion
 
 Esta api corre en una instancia suse aws-ec2, usa nginx para redirigir el puerto 80 a puertos internos, también usa pm2 para proveer estabilidad del servidor.
 
