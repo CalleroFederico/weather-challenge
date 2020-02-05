@@ -1,0 +1,32 @@
+{
+  "name": "weather-challenge",
+  "version": "1.0.0",
+  "description": "challenge",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "supertest": "^4.0.2",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.1"
+  },
+  "scripts": {
+    "test": "mocha supertest.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalleroFederico/weather-challenge.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "federico callero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalleroFederico/weather-challenge/issues"
+  },
+  "homepage": "https://github.com/CalleroFederico/weather-challenge#readme"
+}
