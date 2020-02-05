@@ -1,4 +1,4 @@
-# weather-challenge# Weather Challenge 
+# Weather Challenge 
 
 #### Objetivo
 Se requiere implementar una API que provea en formato JSON el estado del tiempo basado en
